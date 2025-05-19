@@ -1,0 +1,128 @@
+.w .main {
+  margin: 0 auto;
+  margin-left: 220px;
+  width: 980px;
+  height: 465px;
+  /* background-color: pink; */
+}
+
+.w .main .focus {
+  float: left;
+  margin-top: 10px;
+  width: 720px;
+  height: 455px;
+  background-image: url(../upload/focus1.png);
+  /* background-color: aqua; */
+}
+
+.w .main .newsflash {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 250px;
+  height: 455px;
+  /* background-color: aquamarine; */
+
+}
+
+.w .main .newsflash .news {
+  width: 250px;
+  height: 165px;
+  /* background-color: blue; */
+
+  border: 1px solid #e4e4e4;
+}
+
+.w .main .newsflash .news .news-hd {
+  width: 100%;
+  height: 33px;
+  border-bottom: 1px dotted #e4e4e4;
+}
+
+.w .main .newsflash .news .news-hd h2 {
+  margin-left: 5px;
+  float: left;
+}
+
+.w .main .newsflash .news .news-hd a {
+
+  font-size: 13px;
+  float: right;
+}
+
+.w .main .newsflash .news .news-hd a::after {
+  font-family: 'icomoon';
+  margin-left: 1px;
+  margin-right: 5px;
+  content: '\e920';
+
+}
+
+.w .main .newsflash .news .news-bd {
+  width: 100%;
+  height: 132px;
+}
+
+.w .main .newsflash .news .news-bd ul li {
+  margin-left: 5px;
+  height: 24px;
+  font-size: 13px;
+
+  /* 这个单词的意思是，即使文字显示不开，也必须强制一行显示 */
+  white-space: nowrap;
+
+  /* 超出的部分隐藏 */
+  overflow: hidden;
+
+  /* 文字省略号替代超出的部分 */
+  text-overflow: ellipsis;
+}
+
+.w .main .newsflash .lifeservice {
+  width: 252px;
+  height: 209px;
+  /* background-color: blueviolet; */
+}
+
+.w .main .lifeservice {
+  border-left: 1px solid #e4e4e4;
+}
+
+/* 给ul修改地足够宽 就能装下小li */
+.w .main .lifeservice ul {
+  width: 252px;
+  /* height: 213px; */
+}
+
+.w .main .lifeservice ul li {
+  float: left;
+  width: 63px;
+  height: 71px;
+  /* padding: 0; */
+  text-align: center;
+  border-right: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.w .main .lifeservice ul li i {
+  display: block;
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 24px;
+  height: 28px;
+  background: url(../images/icons.png) no-repeat -19px -15px;
+}
+
+.w .main .newsflash .bargain {
+  margin-top: 5px;
+  width: 250px;
+  height: 81px;
+  background-image: url(../upload/bargain.png);
+  background-repeat: no-repeat;
+}
+
+/* 推荐模块 */
+.recom {
+  height: 163px;
+  background-color: rgb(22, 49, 40);
+}

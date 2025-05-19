@@ -1,0 +1,420 @@
+.w {
+  width: 1200px;
+  height: 31px;
+  line-height: 31px;
+  margin: 0 auto;
+}
+
+/* 版心 */
+/* 默认左浮动的 span（如欢迎语） */
+.w span {
+  float: left;
+  margin-right: 10px;
+}
+
+.w .left .red {
+  color: rgb(175, 24, 24);
+}
+
+.span1 {
+  margin-left: 380px;
+}
+
+.shugang {
+  margin-top: -1px;
+  margin-left: 4px;
+  margin-right: 10px;
+}
+
+/* 注意路径 */
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?1lv3na');
+  src: url('../fonts/icomoon.eot?1lv3na#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?1lv3na') format('truetype'),
+    url('../fonts/icomoon.woff?1lv3na') format('woff'),
+    url('../fonts/icomoon.svg?1lv3na#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.span2::after {
+  font-family: 'icomoon';
+  margin-left: 6px;
+  content: '\e91e';
+
+}
+
+/* header头部 */
+.header {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+  height: 105px;
+  /* background-color: pink; */
+
+}
+
+.logo {
+  position: absolute;
+  top: 22px;
+  width: 171px;
+  height: 61px;
+  /* background-color: aqua; */
+}
+
+.logo a {
+  display: block;
+  width: 171px;
+  height: 61px;
+  background: url(../images/logo.png) no-repeat;
+
+  /* logoSEO优化 */
+
+  /* 淘宝的做法 */
+  /* font-size: 0px; */
+
+  /* 京东的做法 */
+
+  /* 文字偏移 */
+  text-indent: -9999px;
+  /* 偏移超出的部分隐藏掉 */
+  overflow: hidden;
+}
+
+.search {
+  position: absolute;
+  left: 346px;
+  top: 25px;
+  width: 539px;
+  height: 36px;
+  /* background-color: pink; */
+  border: 2px solid #b1191a;
+}
+
+.search input {
+  float: left;
+  width: 455px;
+
+  /* 因为父盒子有2px的边框所以高度要空出4px */
+  height: 32px;
+  text-indent: 10px;
+  color: #666;
+}
+
+.search button {
+  float: left;
+  width: 80px;
+  /* 因为父盒子有2px的边框所以高度要空出4px */
+  height: 32px;
+  font-size: 16px;
+  background-color: rgb(177, 25, 26);
+  color: #fff;
+
+}
+
+.hotwords {
+  position: absolute;
+  left: 346px;
+  top: 61px;
+  width: 500px;
+  height: 18px;
+  /* background-color: aquamarine; */
+
+}
+
+.hotwords a {
+  margin: 0 10px;
+}
+
+.shopcar {
+  position: absolute;
+  top: 25px;
+  right: 70px;
+  border: 1px solid #dfdfdf;
+  width: 140px;
+  height: 35px;
+  /* 文字水平对齐 */
+  text-align: center;
+  /* 文字垂直对齐 */
+  line-height: 35px;
+  background-color: #f7f7f7;
+}
+
+.shopcar::before {
+  font-family: 'icomoon';
+  content: '\e93a';
+  margin-right: 5px;
+
+  /* 因为它是文字 所以可以更改其颜色 */
+  color: #c81623;
+}
+
+.shopcar::after {
+  font-family: 'icomoon';
+  content: '\e920';
+  margin-left: 10px;
+}
+
+.count {
+  position: absolute;
+  top: -5px;
+  /* right: 15px; 数字增大时红框因为是离右一定的距离，所以会往左边扩 离左一定的距离可以解决问题*/
+  left: 105px;
+
+
+  /* 绝对,固定定位与浮动可以设置宽高 */
+  /* width: 14px; 宽度建议随着数字的增大而增大 因为若固定宽度 则数字往后会越过红底*/
+
+  /* 行高会继承 继承父类的行高为35px 所以会导致数字脱离红框 */
+  line-height: 14px;
+  height: 14px;
+  color: #fff;
+  background-color: rgb(177, 25, 26);
+
+  /* 数字加上内边距可以让单数字使框变得饱满 */
+  /* 这样就避免了数字增大时宽度不够的问题 */
+  padding: 0 5px;
+  border-radius: 7px 7px 7px 0;
+}
+
+
+
+
+/* .img {
+  float: left;
+  width: 171px;
+  height: 61px;
+} */
+
+
+/* .search {
+  width: 538px;
+  height: 36px; */
+/* background-color: pink; */
+/* border: 1px solid red;
+} */
+
+/*
+.text {
+  float: left;
+  width: 454px;
+  height: 32px;
+  text-indent: 1em;
+  color:#666;
+}
+
+.button {
+  float: right;
+  width: 80px;
+  height: 34px;
+  background-color: #c81623;
+  color: #fff;
+
+}
+
+.src {
+
+  float: left;
+  width: 500px;
+  height: 18px;
+}
+
+.src a {
+  float: left;
+  margin-right: 30px;
+}
+
+.shopping {
+  text-align: center;
+  line-height: 35px;
+  float: right;
+  width: 140px;
+  height: 35px;
+  border: 1px solid darkgray;
+
+}
+  */
+
+.nav {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+  height: 47px;
+  /* background-color: pink; */
+}
+
+.dt {
+  float: left;
+  width: 210px;
+  height: 45px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  line-height: 45px;
+  background-color: rgb(177, 25, 26);
+
+
+}
+
+.dd {
+  position: absolute;
+  /* display: none; */
+  top: 49px;
+  left: 0px;
+  width: 210px;
+  height: 465px;
+  background-color: rgb(200, 22, 35);
+}
+
+.dd ul li {
+  /* 子绝父相，给li加相对定位是为了给a::after加绝对定位 */
+  position: relative;
+  padding-left: 10px;
+  line-height: 31px;
+  height: 31px;
+  margin-left: 2px;
+
+}
+
+.dd ul li a {
+  font-size: 14px;
+  color: #fff;
+}
+
+.dd ul li a::after {
+  position: absolute;
+  right: 5px;
+  font-family: 'icomoon';
+  content: '\e920';
+
+  /* 因为它是文字 所以可以更改其颜色 */
+  color: #fff;
+
+}
+
+.dd ul li:hover {
+  background-color: #fff;
+}
+
+.dd ul li:hover a {
+  color: rgb(200, 22, 35);
+}
+
+
+/* 必须要给此a添加类选择器 不然这个a会将上面的a的样式覆盖 */
+.nav .fuzhuang {
+  float: left;
+  margin-top: 12px;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #666666;
+  font-size: 16px;
+}
+
+.nav .fuzhuang:hover {
+  color: #b1191a;
+}
+
+.hr {
+  height: 2px;
+  border: none;
+  /* 清除默认边框 */
+  background-color: #b1191a;
+}
+
+/* 底部模块的制作 */
+.footer {
+  /* margin-top: 20px; */
+  width: 1200px;
+  height: 415px;
+  margin: 0 auto;
+  /* background-color: pink; */
+}
+
+.footer .mod_service {
+  /* border-left: 1px solid gray; */
+  width: 1200px;
+  height: 55px;
+  margin: 35px auto;
+}
+
+.footer .mod_service ul li {
+  float: left;
+  width: 300px;
+  height: 50px;
+  /* background-color: rgb(37, 26, 158); */
+  padding-left: 35px;
+
+}
+
+.footer .mod_service ul li h5 {
+  float: left;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  /* background-color: blueviolet; */
+  background: url(../images/icons.png) -252px -3px;
+}
+
+.footer .mod_service ul li div h4 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footer .mod_service ul li p {
+  font-size: 12px;
+}
+
+.footer .hr2 {
+  height: 1px;
+  /* border: none; */
+  background-color: #666666;
+}
+
+.footer .mod_help {
+  width: 1200px;
+  height: 185px;
+  border-bottom: 1px solid #666666;
+}
+
+.footer .mod_help dl {
+  float: left;
+  margin-left: 50px;
+  margin-right: 70px;
+}
+
+.footer .mod_help dl:last-child {
+  /* 选择最后一个dl 水平居中 使字体在二维码正中央 */
+  text-align: center;
+}
+
+.footer .mod_help dl dd {
+  font-size: 16px;
+}
+
+.footer .mod_help dl dd {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* 160px */
+
+.footer .mod_copyright {
+  margin: 0 auto;
+  width: 1200px;
+  height: 160px;
+  text-align: center;
+
+  /* background-color: pink; */
+
+}
+
+.footer .mod_copyright .p {
+  padding-top: 20px;
+}
+
+.footer .mod_copyright .p a {
+  margin-right: 3px;
+}
